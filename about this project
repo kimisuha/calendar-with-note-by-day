@@ -1,0 +1,12 @@
+using react hook, redux, bootstrap, react-calendar to build
+feature:
+  add new note for day
+  update note
+  clear or delete note
+  store in redux
+  hook handle 
+time spent to build: 14 hours
+error:
+  i should close note after delete and save
+  if update and save it note, need do that 2 time, i don't know why but this a complex bug
+  i should store value in local store
