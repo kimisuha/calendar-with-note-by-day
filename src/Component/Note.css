@@ -1,0 +1,165 @@
+/* it's class is contain note, is a main of component */
+.note {
+    width: 500px;
+    max-width: 700px;
+    height: 500px;
+    max-height: 700px;
+
+    font-family: monospace;
+
+    overflow: hidden;
+
+    background-color: #EEE78D;
+
+    border: 1px solid transparent;
+    border-radius: 1rem;
+
+    /* margin: 0 auto; */
+
+    transform: translateX(200%) translateY(-100%);
+
+    z-index: 999;
+
+    opacity: 1.5;
+    position: absolute;
+}
+
+/* this class is contain title of note */
+.note-head {
+    height: 9%;
+
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 1px solid black;
+}
+
+/* an icon for close note */
+span svg{
+    border: 1px solid black;
+    cursor: pointer;
+    
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.1rem;
+}
+
+span svg:hover{
+    color: red;
+    background-color: #2a2a72;
+}
+
+/* a title of note */
+.note-title {
+    width: 77%;
+    background-color: transparent;
+
+    border: 1px solid transparent;
+
+    font-size: large;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* a button, click and save this note */
+.note-save {
+    border-left: 1px solid black;
+
+    text-transform: capitalize;
+
+    padding: 0.4rem;
+}
+
+.note-save:hover {
+    cursor: pointer;
+
+    color: white;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+/* this store content of note */
+#note-content{
+    width: 98%;
+    height: 350px;
+
+    background-color: transparent;
+    
+    font-size: large;
+    font-family: monospace;
+
+    border: 1px solid transparent;
+
+    margin: 0.2rem;
+}
+
+.note-delete, .note-remove{
+/*     width: 3rem;
+    height: 2rem;
+ */
+    margin: 0.5rem;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+
+    color: white;
+}
+
+.note-remove:hover{
+    cursor: pointer;
+}
+
+.note-delete:hover{
+    cursor: pointer;
+}
+
+/* it's a button for delete note */
+.note-delete{
+    background-color: #A51D2A;
+}
+
+/* it's a button for remove all in note */
+.note-remove{
+    background-color: cornflowerblue;
+}
+
+/* reposive for screen have width <= 1200px */
+@media screen and (max-width: 1200px) {
+    .note{
+        width: 300px;
+        max-width: 400px;
+
+        height: 400px;
+        max-height: 600px;
+
+        transform: translateX(120%) translateY(-70%);
+    }
+
+    .note-head{
+        height: auto;
+    }
+
+    #note-content{
+        height: 250px;
+    }
+}
+
+/* reposive for screen have width <= 600px */
+@media screen and (max-width: 600px) {
+    .note{
+        width: 300px;
+        max-width: 400px;
+
+        height: 300px;
+        max-height: 500px;
+
+        transform: translateX(50%) translateY(-70%);
+    }
+
+    #note-content{
+        height: 150px;
+    }
+}
